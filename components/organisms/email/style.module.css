@@ -1,0 +1,119 @@
+.emailContainer {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.emailDescContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.videoPlayerContainer {
+  width: 635px;
+  height: 450px;
+  position: relative;
+  border-radius: 40px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.overlay {
+  width: 635px;
+  height: 450px;
+  position: absolute;
+  z-index: 2;
+  transition: 0.5s;
+  background-color: black;
+  opacity: 0;
+}
+.videoPlayerContainer:hover .overlay {
+  opacity: 0.2;
+}
+.playButtonRadius {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  position: absolute;
+  z-index: 3;
+  background-color: white;
+  opacity: 0.5;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+  }
+  50% {
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+  }
+  100% {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+  }
+}
+
+.playButton {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: white;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inputEmailContainer {
+  margin-top: 40px;
+  width: 400px;
+  position: relative;
+}
+.inputEmail {
+  padding: 12px 180px 12px 24px;
+  width: 100%;
+  height: 48px;
+  border: 0px;
+  border-radius: 50px;
+  background: #f5f6fb;
+}
+.formButton {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+@media only screen and (max-width: 996px) {
+  .videoPlayerContainer {
+    margin-bottom: 50px;
+  }
+
+  .emailDescContainer {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .videoPlayerContainer {
+    height: 260px;
+  }
+  .overlay {
+    height: 260px;
+  }
+  .inputEmailContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .formButton {
+    margin-top: 12px;
+    position: relative;
+  }
+}

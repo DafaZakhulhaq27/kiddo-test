@@ -1,0 +1,22 @@
+.featureItem {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.featureItemDesc {
+  margin-left: 24px;
+  display: flex;
+  flex-direction: column;
+}
+.featureItemDesc h3 {
+  font-weight: 600;
+  font-size: 20px;
+  color: #070f18;
+}
+.featureItemDesc p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #575455;
+  width: 216px;
+}

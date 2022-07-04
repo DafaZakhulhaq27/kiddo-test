@@ -1,0 +1,50 @@
+.brands {
+  margin-top: 70px;
+}
+.brands ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+.brands li {
+  float: left;
+  margin-right: 50px;
+  color: #070f18;
+}
+.brands li:last-child {
+  margin-right: 0px;
+}
+.brandsTitle {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  width: 151px;
+}
+
+@media only screen and (max-width: 996px) {
+  .brands {
+    margin-top: 82px;
+  }
+  .brandsTitle {
+    text-align: center;
+    width: auto;
+    margin-bottom: 30px;
+  }
+  .brands li {
+    margin-right: 40px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .brands {
+    margin-top: 50px;
+  }
+
+  .brandsTitle {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .brands li {
+    margin-top: 30px;
+    margin-right: 24px;
+  }
+}

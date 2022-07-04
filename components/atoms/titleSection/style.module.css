@@ -1,0 +1,11 @@
+.titleSection {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+@media only screen and (max-width: 540px) {
+  .titleSection {
+    font-size: 28px;
+  }
+}

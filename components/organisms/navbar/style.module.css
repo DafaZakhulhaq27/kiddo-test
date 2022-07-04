@@ -1,0 +1,22 @@
+.navbar {
+  padding: 22px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: white;
+}
+
+.imgContainer {
+  width: 129px;
+  height: 51px;
+}
+
+@media only screen and (max-width: 540px) {
+  .navbar button {
+    display: none;
+  }
+}

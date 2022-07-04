@@ -1,0 +1,53 @@
+.hero {
+  margin-top: 90px;
+}
+
+.heroTitle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55px;
+}
+.heroDesc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 20px;
+  color: #575455;
+}
+.heroButton {
+  margin-top: 28px;
+}
+
+@media only screen and (max-width: 996px) {
+  .hero {
+    text-align: center;
+    margin-top: 100px;
+  }
+  .heroDesc {
+    margin-top: 93px;
+  }
+  .heroButton {
+    margin-top: 72px;
+  }
+
+  .hero img {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .hero {
+    text-align: left;
+    margin-top: 50px;
+  }
+  .heroTitle {
+    font-size: 38px;
+  }
+
+  .heroDesc {
+    margin-top: 20px;
+  }
+  .heroButton {
+    margin-top: 62px;
+  }
+}
